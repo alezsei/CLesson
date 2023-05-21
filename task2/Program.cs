@@ -1,35 +1,29 @@
 ﻿Console.WriteLine("Введите 1 число");
-int a1 = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите 2 число");
-int b1 = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите 3 число");
-int c1 = Convert.ToInt32(Console.ReadLine());
-if (a1 > b1)
+int num3 = Convert.ToInt32(Console.ReadLine());
+if (num1 > num2)
 {
-    if (a1 >c1)
+    if (num1 > num3)
     {
-        Console.Write("Большее из  чисел ");
-        Console.WriteLine(a1);
+        Console.Write($"Большее из чисел {num1}");
     }
     else
     {
-        Console.Write("Большее из  чисел ");
-        Console.WriteLine(c1);
-
+         Console.Write($"Большее из чисел {num3}");
     }
 
 }else
 {
-    if (b1 > c1)
+    if ( num2 > num3)
     {
-        Console.Write("Большее из  чисел ");
-        Console.WriteLine(b1);
-    }
+        Console.Write($"Большее из чисел {num2}");
+    }    
     else
     {
-        Console.Write("Большее из  чисел ");
-        Console.WriteLine(c1);
-
+        Console.Write($"Большее из чисел {num3} ");
     }
 
 }
