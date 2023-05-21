@@ -1,17 +1,17 @@
 ﻿ Console.WriteLine("Введите 1 число");
-int a = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите 2 число");
-int b = Convert.ToInt32(Console.ReadLine());
-if (a > b)
+int num2 = Convert.ToInt32(Console.ReadLine());
+if (num1 > num2)
 {
-    Console.Write($"Большее из дву чисел {a}");
+    Console.Write($"Большее из дву чисел {num1}");
 }
 else
 
-    if (b>a)
+    if (num2 > num1)
 
     {
-        Console.Write($"Большее из дву чисел {b}");
+        Console.Write($"Большее из дву чисел {num2}");
     }
 
 else 
