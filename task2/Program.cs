@@ -10,22 +10,49 @@ if (num1 > num2)
     {
         Console.Write($"Большее из чисел {num1}");
     }
-    else
-    {
-         Console.Write($"Большее из чисел {num3}");
-    }
+    else 
+        if  (num1 < num3)
+            {
+             Console.Write($"Большее из чисел {num3}");
+            }
+        else
+        {
+            Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num3}");
+        }
 
-}else
+}
+else 
 {
     if ( num2 > num3)
     {
         Console.Write($"Большее из чисел {num2}");
-    }    
+    }
+    else 
+    {
+        if ( num2 < num3)
+        {   
+            Console.Write($"Большее из чисел {num3} ");
+        }
+    
+        else
+        {
+            Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num3}");
+
+        }
+    }
+}    
+            
+    
+        
+   
+else if (num1 == num2 & num2 == num3)
+    {
+        Console.Write($"Три числа имеют максимальное значение и оно равно {num3}");
+    }
     else
     {
-        Console.Write($"Большее из чисел {num3} ");
+        Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num1}");
     }
 
-}
 
 
