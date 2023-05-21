@@ -1,8 +1,18 @@
 ﻿Console.WriteLine("Введите число");
-int a4 = Convert.ToInt32(Console.ReadLine());
-
-for(int count = 2;a4 > count;count = count +2)
+int num1 = Convert.ToInt32(Console.ReadLine());
+if (num1 > 0)
 {
-    Console.WriteLine(count);
+    for(int count = 2; num1 > count;count = count +2)
+    {
+        Console.WriteLine(count);
     
+    }
+}
+else
+{
+    for(int count = 0; num1 < count;count = count -2)
+    {
+        Console.WriteLine(count);
+    
+    }
 }
