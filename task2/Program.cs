@@ -17,32 +17,32 @@ if (num1 > num2)
             }
         else
         {
-            if (num1 != num2 & num2 != num3)
-            {
-                Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num3}");
-            }
-            else
-            {
-                Console.Write($"Три числа имеют максимальное значение и оно равно {num1}");
-            }
-            
+            Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num3}");
         }
 
 }
 else
 {
-    if (num2 > num3)
+    if (num2 == num1)
     {
-        Console.Write($"Большее из чисел {num2}");
+        if (num2 == num3)
+        {
+            Console.Write($"Три числа имеют максимальное значение и оно равно {num3}");
+        }
+        else
+        {
+            Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num1}");
+        }
+        
     }
     else 
-        if  (num1 < num3)
+        if  (num2 > num3)
             {
-             Console.Write($"Большее из чисел {num3}");
+             Console.Write($"Большее из чисел {num2}");
             }
         else
         {
-            if (num1 != num2 & num2 != num3)
+            if (num2 == num3)
             {
                 Console.Write($"Два из трех чисел имеют максимальное значение и оно равно {num3}");
             }
